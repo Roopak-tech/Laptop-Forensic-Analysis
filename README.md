@@ -1,6 +1,3 @@
-# Laptop-Forensic-Utility
-
-
 # Laptop Forensic Utility
 
 ## Overview
