@@ -29,6 +29,6 @@ This is a simple Windows-based tool for scanning laptops and collecting forensic
 Use only on authorized systems. Do not modify data during scanning.
 
 ## Contact
-
+For full code contact us
 * [raghavb1979@gmail.com](mailto:raghavb1979@gmail.com)
 * [vemanagakharish60@gmail.com](mailto:vemanagakharish60@gmail.com)
