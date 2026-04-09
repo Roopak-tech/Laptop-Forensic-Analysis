@@ -1,0 +1,24 @@
+libdentryextractor (1.0-1) unstable; urgency=low
+
+  * 1.0 Release for Phase II+ Deliverable
+
+ -- Anthony L. Awtrey <aawtrey@idealcorp.com>  Wed, 8 Mar 2006 14:00:00 -0500
+
+libdentryextractor (0.2-2) unstable; urgency=low
+
+  * Changed the name of this package 
+
+ -- Greg Meno <gmeno@idealcorp.com>  Thu, 26 Jan 2006 15:19:00 -0500
+
+libdentryextractor (0.2-1) unstable; urgency=low
+
+  * Upgrade to use Expat instead of Xerces27
+
+ -- Greg Meno <gmeno@idealcorp.com>  Thu, 26 Jan 2006 15:19:00 -0500
+
+libdentryextractor (0.1-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Greg Meno <gmeno@idealcorp.com>  Tue, 17 Jan 2006 19:11:16 -0500
+

@@ -1,0 +1,20 @@
+Source: libdentryextractor
+Priority: optional
+Maintainer: Greg Meno <gmeno@idealcorp.com>
+Build-Depends: debhelper (>= 4.0.0), autotools-dev, libpipelineexpatparser-dev, automake, autoconf, autoconf-archive, libtool
+Standards-Version: 3.6.2
+Section: libs
+
+Package: libdentryextractor-dev
+Section: libdevel
+Architecture: any
+Depends: libdentryextractor1 (= ${Source-Version})
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: libdentryextractor1
+Section: libs
+Architecture: any
+Depends: libpipelineexpatparser1, ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
