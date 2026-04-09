@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4E60A67C-DF23-4F60-9389-8421038276C6}</ProjectGuid>
+    <RootNamespace>WSTRemote</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>US-LATT</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <UseOfAtl>false</UseOfAtl>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfAtl>false</UseOfAtl>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <UseOfAtl>false</UseOfAtl>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\exedll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\exedll\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">US-LATT_Startup</TargetName>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release;..\..\EmailExtract;..\..\WSTDD\WSTDD;C:\WinDDK\7600.16385.1\inc\ddk;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;C:\WinDDK\7600.16385.1\inc\api;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;..\..\USBInfoExtract\USBInfoExtract;..\..\WebForensics\WebForensics;..\..\WebForensics\Dependencies\Include;..\..\Timeline\Timeline;..\..\USB_Device_Utilities\USB Device Utilities\</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\EmailExtract;..\..\WSTDD\WSTDD;C:\WinDDK\7600.16385.1\inc\ddk;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;C:\WinDDK\7600.16385.1\inc\api;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;..\..\USBInfoExtract\USBInfoExtract;..\..\WebForensics\WebForensics;..\..\WebForensics\Dependencies\Include;..\..\Timeline\Timeline;..\..\USB_Device_Utilities\USB Device Utilities\</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);.\Release;..\..\EmailExtract\Release;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;..\..\USB_Device_Utilities\Release\;..\..\WSTDD\Release\;..\..\USBInfoExtract\Release</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\WSTDD\Debug;..\..\EmailExtract\Debug\;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;..\..\USB_Device_Utilities\Debug;..\..\USBInfoExtract\Debug;..\..\WSTDD\Debug</LibraryPath>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">US-LATT_Startup</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CustomBuildStep>
+      <Message>
+      </Message>
+      <Command>
+      </Command>
+      <Outputs>
+      </Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)\libtomcrypt-1.17\src\headers;..\dependencies\zlib-1.2.3;%(AdditionalIncludeDirectories);..\..\USB_Device_Utilities\USB Device Utilities\</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;LTC_NO_PROTOTYPES;%(PreprocessorDefinitions);RECENTDOCS;USBHISTORY;TRUECRYPT;MAILFILECAPTURE;WEBFORENSICS;TIMELINE;NETFORENSICS;</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>psapi.lib;iphlpapi.lib;ws2_32.lib;mpr.lib;setupapi.lib;%(AdditionalDependencies);usbdev.lib;USBInfoExtract.lib;comctl32.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)US-LATT_Startup.exe</OutputFile>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);Debug</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <PostBuildEvent>
+      <Command>copy ..\..\USB_Device_Utilities\Debug\usbdev.dll Debug\exedll\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MinSpace</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>$(SolutionDir)\libtomcrypt-1.17\src\headers;..\dependencies\zlib-1.2.3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;LTC_NO_PROTOTYPES;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions);RECENTDOCS;USBHISTORY;TRUECRYPT;MAILFILECAPTURE;WEBFORENSICS;TIMELINE;PRO;DRIVE_IMAGING;TESTING</PreprocessorDefinitions>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>psapi.lib;iphlpapi.lib;ws2_32.lib;mpr.lib;setupapi.lib;%(AdditionalDependencies);usbdev.lib;;comctl32.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)US-LATT_Startup.exe</OutputFile>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>Release\exedll</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <PreventDllBinding>
+      </PreventDllBinding>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+      <ProfileGuidedDatabase>
+      </ProfileGuidedDatabase>
+      <AdditionalManifestDependencies>"type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='x86' publicKeyToken='6595b64144ccf1df' language='*'"</AdditionalManifestDependencies>
+      <EnableUAC>true</EnableUAC>
+    </Link>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>copy .\Release\exedll\US-LATT_Startup.exe .\..\..\..\US-LATT_Deployment;</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+    </ResourceCompile>
+    <Manifest>
+      <EnableDPIAwareness>true</EnableDPIAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="cfilefind.cpp" />
+    <ClCompile Include="CpuName.cpp" />
+    <ClCompile Include="DiskImaging.cpp" />
+    <ClCompile Include="DriveSerial.cpp" />
+    <ClCompile Include="EventLogParser.cpp" />
+    <ClCompile Include="ExtractRegistryInfo.cpp" />
+    <ClCompile Include="FileHasher.cpp" />
+    <ClCompile Include="HashedXML.cpp" />
+    <ClCompile Include="ImageFileCopier.cpp" />
+    <ClCompile Include="MailCapture.cpp" />
+    <ClCompile Include="md5.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="NetForensics.cpp" />
+    <ClCompile Include="NetworkInfo.cpp" />
+    <ClCompile Include="recentdocs.cpp" />
+    <ClCompile Include="RegParse.cpp" />
+    <ClCompile Include="SysCallsLog.cpp" />
+    <ClCompile Include="SysData.cpp" />
+    <ClCompile Include="SysDataCPU.cpp" />
+    <ClCompile Include="TimeLine.cpp" />
+    <ClCompile Include="TrueCryptImaging.cpp" />
+    <ClCompile Include="usb_serial_validate.cpp" />
+    <ClCompile Include="utf8_validator.cpp" />
+    <ClCompile Include="Utf8Validator\utf8Checker.cc" />
+    <ClCompile Include="WebForensics.cpp" />
+    <ClCompile Include="WSTBitmapImage.cpp" />
+    <ClCompile Include="WSTLog.cpp" />
+    <ClCompile Include="WSTMain.cpp" />
+    <ClCompile Include="WSTRemote.cpp" />
+    <ClCompile Include="x64PhysicalMemoryCapture.cpp" />
+    <ClCompile Include="xmlParser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\USBInfoExtract\USBInfoExtract\USBInfoExtract.h" />
+    <ClInclude Include="..\..\USB_Device_Utilities\USB Device Utilities\USB Device Utilities.h" />
+    <ClInclude Include="cfilefind.h" />
+    <ClInclude Include="DiskSubsys.h" />
+    <ClInclude Include="DiskVolume.h" />
+    <ClInclude Include="DisplayInfo.h" />
+    <ClInclude Include="DriveSerial.h" />
+    <ClInclude Include="EnumServices.h" />
+    <ClInclude Include="error.h" />
+    <ClInclude Include="EventLogParser.h" />
+    <ClInclude Include="extractreg.h" />
+    <ClInclude Include="FileHasher.h" />
+    <ClInclude Include="FileRetrieval.h" />
+    <ClInclude Include="GetNextDirName.h" />
+    <ClInclude Include="gui.h" />
+    <ClInclude Include="hfuncs.h" />
+    <ClInclude Include="LoggedInUsers.h" />
+    <ClInclude Include="MailCapture.h" />
+    <ClInclude Include="md5.h" />
+    <ClInclude Include="miniddk.h" />
+    <ClInclude Include="NetworkInfo.h" />
+    <ClInclude Include="OSVersionInfo.h" />
+    <ClInclude Include="PhysicalDrive.h" />
+    <ClInclude Include="PipeCommHandler.h" />
+    <ClInclude Include="recentdocs.h" />
+    <ClInclude Include="regparse.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SysCallsLog.h" />
+    <ClInclude Include="sysdata.h" />
+    <ClInclude Include="SysDataCPU.h" />
+    <ClInclude Include="SysDataDevices.h" />
+    <ClInclude Include="SysDataMemory.h" />
+    <ClInclude Include="SysDataUsers.h" />
+    <ClInclude Include="SysLogs.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="tstl.h" />
+    <ClInclude Include="usb_serial_validate.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="WSTBitmapImage.h" />
+    <ClInclude Include="WSTCommon.h" />
+    <ClInclude Include="WSTImage.h" />
+    <ClInclude Include="WSTLog.h" />
+    <ClInclude Include="WSTRemote.H" />
+    <ClInclude Include="x64PhysicalMemoryCapture.h" />
+    <ClInclude Include="xmlParser.h" />
+    <ClInclude Include="zconf.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="wstresource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="wstresource.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

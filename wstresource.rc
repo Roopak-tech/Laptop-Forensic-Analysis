@@ -1,0 +1,149 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,1,0,000
+ PRODUCTVERSION 2,1,0,000
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x0L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+#ifndef STRIKE
+            VALUE "FileDescription", "US-LATT PRO Remote"
+            VALUE "FileVersion", "2, 1, 0, 000"
+            VALUE "InternalName", "uslatt"
+            VALUE "LegalCopyright", "Copyright (C) 2012 WetStone Technologies, Inc."
+            VALUE "OriginalFilename", "US-LATT_Startup.exe"
+            VALUE "ProductName", "US-LATT PRO Remote"
+            VALUE "ProductVersion", "2, 1, 0, 000"
+#else
+		    VALUE "FileDescription", "Strike Live Remote"
+            VALUE "FileVersion", "1, 6, 0, 001"
+            VALUE "InternalName", "StrikeLive"
+            VALUE "LegalCopyright", "Copyright (C) 2011 WetStone Technologies, Inc."
+            VALUE "OriginalFilename", "StrikeLive_Startup.exe"
+            VALUE "ProductName", "Strike Live"
+            VALUE "ProductVersion", "1, 6, 0, 001"
+#endif
+
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
+#ifdef STRIKE
+USLATT_ICON ICON L"Strike.ico"
+#else
+USLATT_ICON ICON L"US-LATT.ico"
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+
+IDD_MAIN_DLG DIALOGEX 200, 100, 408, 103 //100->102
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU |WS_OVERLAPPED 
+EXSTYLE WS_EX_NOPARENTNOTIFY
+#ifndef STRIKE
+CAPTION "US-LATT PRO 2.1.0"
+#else
+CAPTION "Strike Live 1.6.0.1"
+#endif
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Run Triage",IDC_BTN_RUN,100,35,45,14
+    PUSHBUTTON      "Details>>",IDC_BTN_DETAILS,3,70,55,14
+	PUSHBUTTON      "View Errors",IDC_BTN_ERRORS,60,70,60,14,WS_DISABLED
+	PUSHBUTTON      "View Warnings",IDC_BTN_WARNINGS,121,70,73,14,WS_DISABLED
+	PUSHBUTTON      "Eject Token",IDC_BTN_EJECT,195,70,50,14,WS_DISABLED
+//#ifdef DRIVE_IMAGING
+	PUSHBUTTON      "Drive Imaging",IDC_BTN_DRIVE_IMAGING,246,70,50,14
+//#endif
+    PUSHBUTTON      "Abort",IDC_BTN_ABORT,150,35,40,14
+    LISTBOX         IDC_SIG_LB,4,104,404,130,WS_VSCROLL | WS_HSCROLL //101->104
+	//LISTBOX         IDC_SIG_LB,400,10,104,130,WS_VSCROLL | WS_HSCROLL //101->104
+	//CTEXT			"Triaging ...",IDC_STATUS_TEXT,120,20,60,15
+END
+
+
